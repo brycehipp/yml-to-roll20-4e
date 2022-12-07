@@ -1,0 +1,21 @@
+template: dnd-4e-power
+name: Biting Volley
+type: encounter
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+  - Weapon
+action: standard
+range: 'Ranged 20/40'
+target: One or two creatures
+attacks:
+  -
+    attack: '[[ 1d20cs>18+[[ @{dexterity-mod-level} ]]+[[ @{weapon-1-attack} ]] ]]'
+    vs: Reflex
+    damage: '[[ @{weapon-1-num-dice}d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice}+[[ @{dexterity-mod} ]]+[[@{weapon-1-damage}]] ]]'
+  -
+    attack: '[[ 1d20cs>18+[[ @{dexterity-mod-level} ]]+[[ @{weapon-1-attack} ]] ]]'
+    vs: Reflex
+    damage: '[[ @{weapon-1-num-dice}d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice}+[[ @{dexterity-mod} ]]+[[@{weapon-1-damage}]] ]]'

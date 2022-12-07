@@ -1,0 +1,15 @@
+template: dnd-4e-power
+name: Basic Attack
+type: at-will
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+action: standard
+range: 'Ranged 20/40'
+target: One creature
+attacks:
+  -
+    attack: '[[ 1d20 + [[@{dexterity-mod-level}]] + [[@{weapon-1-attack}]] ]]'
+    vs: AC
+    damage: '[[ @{weapon-1-num-dice}d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice} + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'

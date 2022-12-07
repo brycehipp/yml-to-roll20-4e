@@ -1,0 +1,9 @@
+template: dnd-4e-power
+name: Elven Accuracy
+type: encounter
+level: '@{weapon-1-name}'
+keywords:
+action: free
+range: Personal
+trigger: You make an attack roll and dislike the result.
+effect: Reroll the attack roll. Use the second roll, even if it's lower

@@ -1,0 +1,11 @@
+template: dnd-4e-power
+name: Spitting-Cobra Stance
+type: daily
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+  - Stance
+  - Weapon
+action: minor
+range: Personal
+effect: Until the stance ends, you can make a ranged basic attack as an immediate reaction against any enemy within 5 squares of you that moves closer to you.

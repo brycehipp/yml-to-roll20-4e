@@ -1,0 +1,8 @@
+template: dnd-4e-power
+name: Second Wind
+type: encounter
+level: '@{weapon-1-name}'
+keywords:
+action: standard
+range: Personal
+effect: You spend a healing surge and regain 14 hit points. You gain a +2 bonus to all defenses until the start of your next turn.

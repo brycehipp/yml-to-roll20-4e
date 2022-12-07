@@ -1,0 +1,35 @@
+{
+  "name": "yml-to-roll20-4e",
+  "version": "1.0.0",
+  "scripts": {
+    "convert": "ts-node ./src/convert.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@antfu/eslint-config": "^0.33.1",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3",
+    "yaml": "^2.1.3",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/yargs": "^17.0.13",
+    "ts-node": "^10.9.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@antfu",
+      "plugin:prettier/recommended"
+    ],
+    "env": {
+      "es6": true
+    },
+    "rules": {
+      "no-console": "off"
+    }
+  }
+}

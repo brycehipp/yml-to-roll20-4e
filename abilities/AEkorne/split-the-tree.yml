@@ -1,0 +1,16 @@
+template: dnd-4e-power
+name: Split the Tree
+type: Daily
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+  - Weapon
+action: imm-interrupt
+range: 'Ranged 20/40'
+target: Two creatures within 3 squares of each other
+attacks:
+  -
+    attack: '[[ 2d20k1 + [[@{dexterity-mod-level}]] + [[@{weapon-1-attack}]] ]]'
+    vs: AC
+    damage: '[[ 2d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice} + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'

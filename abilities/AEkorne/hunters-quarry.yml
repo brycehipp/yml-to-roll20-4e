@@ -1,0 +1,9 @@
+template: dnd-4e-power
+name: Hunter's Quarry
+type: at-will
+level: '@{weapon-1-name}'
+keywords:
+target: One creature
+attacks:
+  -
+    damage: '[[ 1d6 ]]'

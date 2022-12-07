@@ -1,0 +1,17 @@
+template: dnd-4e-power
+name: Disruptive Strike
+type: encounter
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+  - Weapon
+action: imm-interrupt
+range: 'Ranged 20/40'
+target: The attacking creature
+special: The target takes a penalty to its attack roll for the triggering attack equal to 3 + your Wisdom modifier (+3).
+attacks:
+  -
+    attack: '[[ 1d20 + [[@{dexterity-mod-level}]] + [[@{weapon-1-attack}]] ]]'
+    vs: AC
+    damage: '[[ @{weapon-1-num-dice}d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice} + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'

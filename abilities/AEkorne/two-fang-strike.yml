@@ -1,0 +1,22 @@
+template: dnd-4e-power
+name: Twin Strike
+type: encounter
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+  - Weapon
+action: standard
+range: 'Ranged 20/40'
+target: One creatures
+special: If both attacks hit, you deal extra damage equal to your Wisdom modifier (+3)
+attacks:
+  -
+    attack: '[[ 1d20 + [[@{dexterity-mod-level}]] + [[@{weapon-1-attack}]] ]]'
+    vs: AC
+    damage: '[[ @{weapon-1-num-dice}d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice} + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+  -
+    attack: '[[ 1d20 + [[@{dexterity-mod-level}]] + [[@{weapon-1-attack}]] ]]'
+    vs: AC
+    damage: '[[ @{weapon-1-num-dice}d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice} + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'

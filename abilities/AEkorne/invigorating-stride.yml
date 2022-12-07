@@ -1,0 +1,10 @@
+template: dnd-4e-power
+name: Invigorating Stride
+type: encounter
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+  - Healing
+action: move
+range: Personal
+effect: You shift a number of squares equal to your Wisdom modifier (+3) and must not end the shift adjacent to any enemy. You can use your second wind.
