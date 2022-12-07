@@ -36,6 +36,7 @@ const ACTIONS = {
   minor: 'Minor',
   standard: 'Standard',
   'imm-interrupt': 'Imm Interrupt',
+  'imm-reaction': 'Imm Reaction',
   move: 'Move',
 }
 
