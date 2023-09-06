@@ -21,6 +21,7 @@ interface Power {
   range?: string
   target?: string
   special?: string
+  miss?: string
   trigger?: string
   effect?: string
   attacks?: Attack[]
@@ -83,6 +84,7 @@ function createRoll20Segments(power: Power) {
     power.target?.length ? `{{target=${power.target}}}` : '',
 
     power.special?.length ? `{{special=${power.special}}}` : '',
+    power.miss?.length ? `{{miss=${power.miss}}}` : '',
     power.trigger?.length ? `{{trigger=${power.trigger}}}` : '',
     power.effect?.length ? `{{effect=${power.effect}}}` : '',
 
