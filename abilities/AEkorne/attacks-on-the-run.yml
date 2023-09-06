@@ -1,0 +1,22 @@
+template: dnd-4e-power
+name: Attacks on the Run
+type: daily
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+  - Weapon
+action: standard
+range: 'Ranged 20/40'
+target: One or two creatures
+miss: Half damage per attack.
+attacks:
+  -
+    attack: '[[ 1d20 + [[@{dexterity-mod-level}]] + [[@{weapon-1-attack}]] ]]'
+    vs: AC
+    damage: '[[ 3d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice} + @{weapon-1-dice} + @{weapon-1-dice} + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+  -
+    attack: '[[ 1d20 + [[@{dexterity-mod-level}]] + [[@{weapon-1-attack}]] ]]'
+    vs: AC
+    damage: '[[ 3d(@{weapon-1-dice}) + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
+    critical: '[[ @{weapon-1-dice} + @{weapon-1-dice} + @{weapon-1-dice} + [[@{dexterity-mod}]] + [[@{weapon-1-damage}]] ]]'
