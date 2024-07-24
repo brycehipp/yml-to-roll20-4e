@@ -1,0 +1,11 @@
+template: dnd-4e-power
+name: Defensive Volley
+type: encounter
+level: '@{weapon-1-name}'
+keywords:
+  - Martial
+action: imm-reaction
+range: Ranged weapon
+trigger: An ally is hit by an attack
+target: The triggering ally
+effect: You reduce the damage the target takes by [[@{dexterity-mod}+@{level}/2]] - your Dexterity modifier ([[@{dexterity-mod}]]) plus half your level ([[@{level}/2]])
